@@ -3,14 +3,14 @@ using System;
  using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace CenterBookingSystem.{
+namespace CenterBookingSystem.Data{
 
-public class ApplicationDbContext : DbContext
+public class BookingDbContext : DbContext
     {
-public ApplicationDbContext()
+public BookingDbContext()
         {
         }  
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public BookingDbContext(DbContextOptions<BookingDbContext> options)
             : base(options)
         {
         }
