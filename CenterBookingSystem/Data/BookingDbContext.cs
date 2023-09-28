@@ -1,9 +1,9 @@
-﻿using dotnetapp.Models;
+﻿using CenterBookingSystem.Models;
 using System;
  using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-
+namespace CenterBookingSystem.Data{
 
 public class ApplicationDbContext : DbContext
     {
@@ -16,7 +16,7 @@ public ApplicationDbContext()
         }
 
         public virtual DbSet<EventSpace> EventSpaces { get; set; }
-        public virtual DbSet<Bookong> Bookings { get; set; }
+        public virtual DbSet<Booking> Bookings { get; set; }
 protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -25,4 +25,4 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             }
         }
         // Write your ApplicationDbContext here...
-    }
+    }}

@@ -19,9 +19,9 @@ namespace CenterBookingSystem.Controllers
         {
             return RedirectToAction("Confirmation");
         }
-        public IActionRestsult Confirmation(int bookingID)
+        public IActionResult Confirmation(int bookingID)
         {
-            return View(booking);
+            return View(bookingID);
         }
         // Write your BookingController here...
         // Index() - returns view
