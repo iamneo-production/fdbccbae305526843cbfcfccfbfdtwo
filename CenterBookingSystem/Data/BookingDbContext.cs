@@ -3,7 +3,7 @@ using System;
  using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace CenterBookingSystem.Data{
+namespace CenterBookingSystem{
 
 public class ApplicationDbContext : DbContext
     {
