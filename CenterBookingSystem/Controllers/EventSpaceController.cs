@@ -5,14 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using CenterBookingSystem.Models;
 using CenterBookingSystem.Data;
-
+ 
 namespace CenterBookingSystem.Controllers
 {
     public class EventSpaceController : Controller
     {        
         public IActionResult AvailableSpaces()
         {
-            return ErrorViewModel()
+            return View();
         }
         // Write your EventSpaceController here...
         // AvailableSpaces() - returns View(availableSpaces)
