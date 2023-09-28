@@ -1,4 +1,4 @@
-//using CenterBookingSystem.Data;
+using CenterBookingSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 
