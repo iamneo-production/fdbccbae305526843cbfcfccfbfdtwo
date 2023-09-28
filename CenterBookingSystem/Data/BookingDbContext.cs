@@ -1,7 +1,6 @@
 ﻿using dotnetapp.Models;
 using System;
-using System;
-using Microsoft.EntityFrameworkCore;
+ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 
@@ -17,12 +16,12 @@ public ApplicationDbContext()
         }
 
         public virtual DbSet<EventSpace> EventSpaces { get; set; }
-        public virtual DbSet<Bookong> Students { get; set; }
+        public virtual DbSet<Bookong> Bookings { get; set; }
 protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("User ID=sa;password=examlyMssql@123;server=localhost;Database=FrenchTutionDB;trusted_connection=false;Persist Security Info=False;Encrypt=False;");
+                optionsBuilder.UseSqlServer("User ID=sa;password=examlyMssql@123;server=localhost;Database=BookingDB;trusted_connection=false;Persist Security Info=False;Encrypt=False;");
             }
         }
         // Write your ApplicationDbContext here...
