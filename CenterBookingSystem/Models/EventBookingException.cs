@@ -1,6 +1,9 @@
 ﻿using System;
 
 namespace CenterBookingSystem.Models
-{
-        // write your EventBookingException class here...
+{        
+    public class EventBookingException:Exception{
+        public EventBookingException(string message):base(message)
+        {}
+    }
 }
