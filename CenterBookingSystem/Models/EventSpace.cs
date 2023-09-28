@@ -9,8 +9,8 @@ namespace CenterBookingSystem.Models
                 public string Name{get;set;}
                 public int Capacity{get;set;}
                 public bool Availability{get;set;}
-                public int BookingId{get;set;}
-                public Booking Bookings{get;set;}
+               // public int BookingId{get;set;}
+                public ICollection< Booking> Bookings{get;set;}
 
         }
         // write your EventSpace class here...
